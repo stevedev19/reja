@@ -23,7 +23,7 @@
 .main_frame .left_frame {
   position: relative;
   width: 385px;
-  height: 1515px;
+  height: 1315px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -381,7 +381,6 @@
   align-items: center;
   gap: 10px;
   border-radius: 5px;
-  background: var(--Yellow, #ffb400);
 }
 
 /*.download-btn {              prolly to the trash
