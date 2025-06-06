@@ -35,7 +35,7 @@ app.post("/create-item", (req, res) => {
     res.json({test: "success"}); from old reja*/
  // TODO: code with db here
 })
-
+clearInterval
 app.get("/author", (req, res) =>{
     res.render("author", { user: user });
 });

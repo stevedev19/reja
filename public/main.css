@@ -371,16 +371,11 @@
 }
 
 .left_extra_skill_cv {                       /* new to cv from hire me*/
-  width: 90px;
-  height: 19px;
-
-  display: flex;
-  padding: 16px 32px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  display: block;
+}
 }
 
 /*.download-btn {              prolly to the trash
