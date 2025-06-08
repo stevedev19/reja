@@ -1,6 +1,24 @@
-     // Task A
+// B task
 
-     function countLetter(letter,word){
+function countDigits(x) {
+  let count = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] >= "0" && x[i] <= "9") {
+    count++;
+    }
+  }
+  return count;
+}
+
+const count = countDigits("ad2a54y79wet0sfgb9");
+console.log(count);
+
+
+
+// Task A
+
+     /*function countLetter(letter,word){
         let count = 0;
         for(let i = 0; i<word.length; i++){
             if (word[i] === letter ) {
@@ -9,7 +27,7 @@
         }
          return count;
      }
-     console.log(countLetter("e","engineer"));
+     console.log(countLetter("e","engineer"));*/
 
 
 
