@@ -41,7 +41,7 @@ app.get("/author", (req, res) =>{
 });
 
 app.get("/", function(req, res){
-    res.render("harid");
+    res.render("reja");
 });
 
 /*app.get("/", function (req, res) {
@@ -56,5 +56,6 @@ app.get("/gift", function (req, res) {
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-  console.log(`The server is running successfully on port: ${PORT}`);
+  console.log(`The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+  );
 });
