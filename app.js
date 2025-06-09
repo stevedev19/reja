@@ -38,31 +38,28 @@ app.post("/create-item", (req, res) => {
     console.log("user entered /create-item");
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
-    if(err) {
-      console.log(err);
-      res.end("something went wrong");
-    } else {
-      res.end("successfully added")
-    }
+    console.log(data.ops);
+    res.json(data.ops[0]);
   });
     /*console.log(req.body);
     res.json({test: "success"}); from old reja*/
  // TODO: code with db here
-})
-clearInterval
+});
+/*clearInterval
 app.get("/author", (req, res) =>{
     res.render("author", { user: user });
-});
+});*/
 
 app.get("/", function(req, res){
     console.log('user entered /');
-    db.collection("plans").find().toArray((err, data) => {
+    db.collection("plans")
+    .find()
+    .toArray((err, data) => {
       if(err) {
         console.log(err);
         res.end("something went wrong");
       } else {
         res.render("reja", {items: data});
-        console.log("data", data); 
       }
     });
 });
