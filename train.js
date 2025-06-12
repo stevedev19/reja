@@ -45,8 +45,8 @@ class Shop {
 
 const shop1 = new Shop(100, 100, 100);
 
-shop1.sotish('non', 3);
-shop1.qabul('ayron', 4);
+shop1.sotish('non', 54);
+shop1.qabul('ayron', 40);
 shop1.qoldiq()
 
 
