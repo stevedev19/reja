@@ -1,6 +1,64 @@
+// C task
+
+const moment = require("moment");
+
+class Shop {
+  // state
+  non;
+  somsa;
+  ayron;
+
+  constructor(non, somsa, ayron) {
+    this.non = non;
+    this.somsa = somsa;
+    this.ayron = ayron;
+  }
+
+  qoldiq() {
+    console.log(
+      `${moment().format("LT")}da ${this.non} non, ${this.somsa} somsa, ${
+        this.ayron
+      } ayron bor`
+    );
+  }
+
+  sotish(addItem, amountItem) {
+    if (addItem === "non") {
+      this.non -= amountItem;
+    } else if (addItem === "somsa") {
+      this.somsa -= amountItem;
+    } else if (addItem === "ayron") {
+      this.ayron -= amountItem;
+    }
+  }
+
+  qabul(receiveItem, amountItem) {
+    if (receiveItem === "non") {
+      this.non += amountItem;
+    } else if (receiveItem === "somsa") {
+      this.somsa += amountItem;
+    } else if (receiveItem === "ayron") {
+      this.ayron += amountItem;
+    }
+  }
+}
+
+const shop1 = new Shop(100, 100, 100);
+
+shop1.sotish('non', 3);
+shop1.qabul('ayron', 4);
+shop1.qoldiq()
+
+
+
+
+
+
+
+
 // B task
 
-function countDigits(x) {
+/* function countDigits(x) {
   let count = 0;
 
   for (let i = 0; i < x.length; i++) {
@@ -12,7 +70,7 @@ function countDigits(x) {
 }
 
 const count = countDigits("ad2a54y79wet0sfgb9");
-console.log(count);
+console.log(count); */
 
 
 
