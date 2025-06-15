@@ -1,6 +1,25 @@
+// D task
+
+const { checkCollectionName } = require("mongodb/lib/utils");
+
+function checkContent(x, y) {
+  let first = x.split("").sort().join("");
+  let second = y.split("").sort().join("");
+  if (first === second) {
+    return true;
+  } else {
+    console.log("Please try again");
+  }
+}
+
+let result = checkContent("nima", "mina");
+console.log(result);
+
+
+
 // C task
 
-const moment = require("moment");
+/* const moment = require("moment");
 
 class Shop {
   // state
@@ -48,7 +67,7 @@ const shop1 = new Shop(100, 100, 100);
 shop1.sotish('non', 54);
 shop1.qabul('ayron', 40);
 shop1.qoldiq()
-
+*/
 
 
 
