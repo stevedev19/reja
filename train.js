@@ -1,6 +1,15 @@
+// E task
+
+function getReverse(x) {
+  return x.split("").reverse().join("");
+}
+console.log(getReverse("va nihoyat e"));
+
+
+
 // D task
 
-const { checkCollectionName } = require("mongodb/lib/utils");
+/*const { checkCollectionName } = require("mongodb/lib/utils");
 
 function checkContent(x, y) {
   let first = x.split("").sort().join("");
@@ -13,7 +22,7 @@ function checkContent(x, y) {
 }
 
 let result = checkContent("nima", "mina");
-console.log(result);
+console.log(result);*/
 
 
 
