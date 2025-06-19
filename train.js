@@ -1,15 +1,34 @@
+// F task
+
+function findDoublers(x) {
+  let newString = x.split("").sort().join("");
+
+  for (let i = 0; i < x.length; i++) {
+    if (newString[i] === newString[i + 1]) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+console.log(findDoublers("kalla"));
+
 // E task
 
+/*
 function getReverse(x) {
   return x.split("").reverse().join("");
 }
 console.log(getReverse("va nihoyat e"));
+*/
 
 
 
 // D task
 
-/*const { checkCollectionName } = require("mongodb/lib/utils");
+/*
+const { checkCollectionName } = require("mongodb/lib/utils");
 
 function checkContent(x, y) {
   let first = x.split("").sort().join("");
@@ -22,7 +41,8 @@ function checkContent(x, y) {
 }
 
 let result = checkContent("nima", "mina");
-console.log(result);*/
+console.log(result);
+*/
 
 
 
